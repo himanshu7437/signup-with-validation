@@ -67,6 +67,10 @@ p {
     width: 350px;
   }
 
+  label {
+    font-size: 13px;
+  }
+
   input {
     width: 80%;
     margin: 5px 0px;
@@ -74,7 +78,7 @@ p {
   }
 
   p {
-    font-size: 13px;
+    font-size: 11px;
     margin-bottom: 5px;
   }
 
