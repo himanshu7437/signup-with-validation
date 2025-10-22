@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <main>
-            <form action="" onchange="allGoodToGO()">
+            <form oninput="allGoodToGO()">
                 <label for="email">Email</label>
-                <br>
-                <input type="email" required placeholder="Example@email.com">
-                <br>
-                <p>Make sure email is more than 3 characters and has @ and a.</p>
-                <label for="email">Password</label>
-                <br>
-                <input type="password" required placeholder="Your Password">
-                <br>
-                <p>Make sure email is more than 3 characters and has @ and a.</p>
-                <input type="submit">
+                <input type="text" class="email" placeholder="Example@email.com" oninput="checkEmail()">
+                <p id="para1" class="errorMessage">Make sure email is more than 3 characters and has @ and a.</p>
+                <label for="password">Password</label>
+                <input type="text" class="password" placeholder="Your Password" oninput="checkPassword()">
+                <p id="para2" class="errorMessage">Make sure email is more than 3 characters and has @ and a.</p>
+                <p class="green">All good to go!</p>
+                <button onclick="confirmSubmit(event)" class="btn">Submit</button>
             </form>
         </main>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
